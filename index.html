@@ -300,6 +300,291 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="13850554413.github.io/2018/11/11/Linux学习心得/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="灰灰">
+      <meta itemprop="description" content="个人博客，作为学习">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天上人间">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/11/Linux学习心得/" itemprop="url">
+                   Linux学习心得
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-11-11 17:42:53 / Modified: 17:52:34" itemprop="dateCreated datePublished" datetime="2018-11-11T17:42:53+08:00">2018-11-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>话说用Linux陆陆续续也有些年头了,总感觉自己还是个菜鸟什么命令都要查一查跟高手简直不要区别太大，<br>回顾了一下自身的处境我该想想Linux重要的东西都有哪些，没错就是增删改查，增删改查那是什么？就是<br>基本的文件操作，把这些总结下来后面再来谈谈安装软件的问题.</p>
+<p>首先你想知道你目录里面都有什么你可以用ls, 如果目录里又隐藏文件你得加l选项 -a才能看得到,查看文件<br>的详细信息 -l 递归目录可以加 -r 他们的选项实在是太多了没有办法一个一个记这些就是我经常用到的，如果<br>你的目录很大在-r的时候你就要注意了,有时候这些选项也可以结合起来一起使用.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/11/Linux学习心得/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="13850554413.github.io/2018/11/05/如何获得linux命令源码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="灰灰">
+      <meta itemprop="description" content="个人博客，作为学习">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天上人间">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/05/如何获得linux命令源码/" itemprop="url">
+                  如何获得linux命令源码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-11-05 23:41:37 / Modified: 23:58:22" itemprop="dateCreated datePublished" datetime="2018-11-05T23:41:37+08:00">2018-11-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.终端输入which [命令名],获取程序所在目录<br>2.输入dpkg -S [命令路径],得知命令所在包<br>3.sudo apt-get source [包名],下载指定的包<br>4.如果遇到找不到合适的源的问题请用root权限编辑/etc/apt/sources.list添加国内源,个人觉得网易的不错<br>5.下载源更新完毕后,就可以下载了,源码文件在包的src目录下</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="13850554413.github.io/2018/10/07/git常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,12 +631,24 @@
                 
               
 
-              <time title="Created: 2018-10-07 23:26:59 / Modified: 23:53:22" itemprop="dateCreated datePublished" datetime="2018-10-07T23:26:59+08:00">2018-10-07</time>
+              <time title="Created: 2018-10-07 23:26:59" itemprop="dateCreated datePublished" datetime="2018-10-07T23:26:59+08:00">2018-10-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-11 17:52:34" itemprop="dateModified" datetime="2018-11-11T17:52:34+08:00">2018-11-11</time>
               
             
           </span>
@@ -491,12 +788,24 @@
                 
               
 
-              <time title="Created: 2018-07-25 23:09:13 / Modified: 23:37:32" itemprop="dateCreated datePublished" datetime="2018-07-25T23:09:13+08:00">2018-07-25</time>
+              <time title="Created: 2018-07-25 23:09:13" itemprop="dateCreated datePublished" datetime="2018-07-25T23:09:13+08:00">2018-07-25</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-11 17:52:34" itemprop="dateModified" datetime="2018-11-11T17:52:34+08:00">2018-11-11</time>
               
             
           </span>
@@ -531,7 +840,8 @@
       
         
           
-            <h4 id="这个框架是否可以扩展插件-比如把-python-一些模块集成到里面去以扩展他的功能-目前正在学习阶段所以不是很明白-现在主要以-requests-re-为主-理解编程掌握-python-语法基础"><a href="#这个框架是否可以扩展插件-比如把-python-一些模块集成到里面去以扩展他的功能-目前正在学习阶段所以不是很明白-现在主要以-requests-re-为主-理解编程掌握-python-语法基础" class="headerlink" title="这个框架是否可以扩展插件,比如把 python 一些模块集成到里面去以扩展他的功能,目前正在学习阶段所以不是很明白,现在主要以 requests + re 为主,理解编程掌握 python 语法基础."></a>这个框架是否可以扩展插件,比如把 python 一些模块集成到里面去以扩展他的功能,目前正在学习阶段所以不是很明白,现在主要以 requests + re 为主,理解编程掌握 python 语法基础.</h4>
+            <p> 这个框架是否可以扩展插件,比如把 python 一些模块集成到里面去以扩展他的功能,目前正在学习阶段所以不是很明白,现在主要以 requests + re 为主,理解编程掌握 python 语法基础.</p>
+
           
         
       
@@ -647,7 +957,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-25 23:41:49" itemprop="dateModified" datetime="2018-07-25T23:41:49+08:00">2018-07-25</time>
+                <time title="Modified: 2018-11-11 17:52:33" itemprop="dateModified" datetime="2018-11-11T17:52:33+08:00">2018-11-11</time>
               
             
           </span>
@@ -928,7 +1238,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -949,7 +1259,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>

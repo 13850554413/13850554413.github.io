@@ -108,24 +108,25 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="1.终端输入which [命令名],获取程序所在目录2.输入dpkg -S [命令路径],得知命令所在包3.sudo apt-get source [包名],下载指定的包4.如果遇到找不到合适的源的问题请用root权限编辑/etc/apt/sources.list添加国内源,个人觉得网易的不错5.下载源更新完毕后,就可以下载了,源码文件在包的src目录下">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="13850554413.github.io/2018/07/19/hello-world/index.html">
+<meta property="og:title" content="如何获得linux命令源码">
+<meta property="og:url" content="13850554413.github.io/2018/11/05/如何获得linux命令源码/index.html">
 <meta property="og:site_name" content="天上人间">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1.终端输入which [命令名],获取程序所在目录2.输入dpkg -S [命令路径],得知命令所在包3.sudo apt-get source [包名],下载指定的包4.如果遇到找不到合适的源的问题请用root权限编辑/etc/apt/sources.list添加国内源,个人觉得网易的不错5.下载源更新完毕后,就可以下载了,源码文件在包的src目录下">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-25T15:47:01.362Z">
+<meta property="og:updated_time" content="2018-11-05T15:58:22.103Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="如何获得linux命令源码">
+<meta name="twitter:description" content="1.终端输入which [命令名],获取程序所在目录2.输入dpkg -S [命令路径],得知命令所在包3.sudo apt-get source [包名],下载指定的包4.如果遇到找不到合适的源的问题请用root权限编辑/etc/apt/sources.list添加国内源,个人觉得网易的不错5.下载源更新完毕后,就可以下载了,源码文件在包的src目录下">
 
 
 
 
 
 
-  <link rel="canonical" href="13850554413.github.io/2018/07/19/hello-world/"/>
+  <link rel="canonical" href="13850554413.github.io/2018/11/05/如何获得linux命令源码/"/>
 
 
 
@@ -135,7 +136,7 @@
   };
 </script>
 
-  <title>Hello World | 天上人间</title>
+  <title>如何获得linux命令源码 | 天上人间</title>
   
 
 
@@ -300,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="13850554413.github.io/2018/07/19/hello-world/">
+    <link itemprop="mainEntityOfPage" href="13850554413.github.io/2018/11/05/如何获得linux命令源码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="灰灰">
@@ -317,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">如何获得linux命令源码
               
             
           </h1>
@@ -342,24 +343,12 @@
                 
               
 
-              <time title="Created: 2018-07-19 22:22:13" itemprop="dateCreated datePublished" datetime="2018-07-19T22:22:13+08:00">2018-07-19</time>
+              <time title="Created: 2018-11-05 23:41:37 / Modified: 23:58:22" itemprop="dateCreated datePublished" datetime="2018-11-05T23:41:37+08:00">2018-11-05</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-07-25 23:47:01" itemprop="dateModified" datetime="2018-07-25T23:47:01+08:00">2018-07-25</time>
               
             
           </span>
@@ -392,17 +381,7 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<a id="more"></a>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>1.终端输入which [命令名],获取程序所在目录<br>2.输入dpkg -S [命令路径],得知命令所在包<br>3.sudo apt-get source [包名],下载指定的包<br>4.如果遇到找不到合适的源的问题请用root权限编辑/etc/apt/sources.list添加国内源,个人觉得网易的不错<br>5.下载源更新完毕后,就可以下载了,源码文件在包的src目录下</p>
 
       
     </div>
@@ -421,6 +400,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
 
       
       
@@ -430,14 +415,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/07/git常用命令/" rel="next" title="git常用命令">
+                <i class="fa fa-chevron-left"></i> git常用命令
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/21/hexo-第一篇博客/" rel="prev" title=" Linux常用命令总结">
-                 Linux常用命令总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/11/Linux学习心得/" rel="prev" title=" Linux学习心得">
+                 Linux学习心得 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -487,17 +476,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -575,22 +555,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
