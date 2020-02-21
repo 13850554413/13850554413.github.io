@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"github.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="python内建函数列表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python内建函数列表">
+<meta property="og:url" content="https://github.com/13850554413/13850554413.github.io/2013/12/02/python%E7%AE%80%E8%AE%B0/index.html">
+<meta property="og:site_name" content="天上人间">
+<meta property="og:description" content="python内建函数列表">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2013-12-02T07:30:16.000Z">
+<meta property="article:modified_time" content="2020-02-18T11:24:43.023Z">
+<meta property="article:author" content="小灰灰">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://github.com/13850554413/13850554413.github.io/2013/12/02/python%E7%AE%80%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>python内建函数列表 | 天上人间</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">天上人间</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">个人博客| 学习交流| 日志心态</p>
+  </div>
+
+  <div class="site-nav-right"></div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/13850554413/13850554413.github.io/2013/12/02/python%E7%AE%80%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小灰灰">
+      <meta itemprop="description" content="我的博客用于记录">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天上人间">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          python内建函数列表
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-12-02 15:30:16" itemprop="dateCreated datePublished" datetime="2013-12-02T15:30:16+08:00">2013-12-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-18 19:24:43" itemprop="dateModified" datetime="2020-02-18T19:24:43+08:00">2020-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">python, 笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">python内建函数列表</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="python内建函数列表"><a href="#python内建函数列表" class="headerlink" title="python内建函数列表"></a>python内建函数列表</h1><p><strong>数学运算类</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">abs(x)                      求绝对值</span><br><span class="line">complex([real[, imag]]) 	创建一个复数</span><br><span class="line">divmod(a, b) 	            分别取商和余数</span><br><span class="line">float([x]) 	                将一个字符串或数转换为浮点数。如果无参数将返回<span class="number">0.0</span></span><br><span class="line">int([x[, base]])  	        将一个字符转换为int类型，base表示进制</span><br><span class="line">long([x[, base]])  	        将一个字符转换为long类型</span><br><span class="line">pow(x, y[, z])  	        返回x的y次幂</span><br><span class="line">range([start], stop[, step])</span><br><span class="line">                            产生一个序列，默认从<span class="number">0</span>开始</span><br><span class="line">round(x[, n])  	            四舍五入</span><br><span class="line">sum(iterable[, start])  	对集合求和</span><br><span class="line">oct(x) 	                    将一个数字转化为<span class="number">8</span>进制</span><br><span class="line">hex(x) 	                    将整数x转换为<span class="number">16</span>进制字符串</span><br><span class="line">chr(i) 	                    返回整数i对应的ASCII字符</span><br><span class="line">bin(x) 	                    将整数x转换为二进制字符串</span><br><span class="line">bool([x]) 	                将x转换为Boolean类型k</span><br></pre></td></tr></table></figure>
+
+<p><strong>集合操作类</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">basestring() 	            str和unicode的超类不能直接调用，可以用作isinstance判断</span><br><span class="line">format(value [, format_spec])</span><br><span class="line">                            格式化输出字符串格式化的参数顺序从<span class="number">0</span>开始，如“I am &#123;<span class="number">0</span>&#125;,I like &#123;<span class="number">1</span>&#125;”</span><br><span class="line">unichr(i) 	                返回给定int类型的unicode</span><br><span class="line">enumerate(sequence [, start = <span class="number">0</span>])</span><br><span class="line">                            返回一个可枚举的对象,该对象的next()方法将返回一个tuple</span><br><span class="line">iter(o[, sentinel]) 	    生成一个对象的迭代器，第二个参数表示分隔符</span><br><span class="line">max(iterable[, args...][key])</span><br><span class="line">                            返回集合中的最大值</span><br><span class="line">min(iterable[, args...][key])</span><br><span class="line">                            返回集合中的最小值</span><br><span class="line">dict([arg]) 	            创建数据字典</span><br><span class="line">list([iterable])  	        将一个集合类转换为另外一个集合类</span><br><span class="line">set() 	                    set对象实例化</span><br><span class="line">frozenset([iterable]) 	    产生一个不可变的set</span><br><span class="line">str([object])  	            转换为string类型</span><br><span class="line">sorted(iterable[, cmp[, key[, reverse]]])  	队集合排序</span><br><span class="line">tuple([iterable])  	        生成一个tuple类型</span><br><span class="line">xrange([start], stop[, step])</span><br><span class="line">                            xrange()函数与range()类似，但xrnage()并不创建列表，而是返回一</span><br><span class="line">                            个xrange对象，它的行为与列表相似，但是只在需要时才计算列表值，当列</span><br><span class="line">                            表很大时，这个特性能为我们节省内存</span><br></pre></td></tr></table></figure>
+
+<p><strong>逻辑判断</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">all(iterable)               iterable为<span class="literal">True</span>或迭代起为空返回<span class="literal">True</span></span><br><span class="line">any(iterable)               如果iterable任一元素为真返回<span class="literal">True</span>如果迭代器为空返回<span class="literal">False</span></span><br><span class="line">cmp(x, y) 	                如果x &lt; y ,返回负数；x == y, 返回<span class="number">0</span>；x &gt; y,返回正数</span><br><span class="line"></span><br><span class="line">**反射**</span><br><span class="line"></span><br><span class="line">callable(object)            检查对象object是否可调用</span><br><span class="line">compile(source, filename, mode, flags=<span class="number">0</span>, dont_inherit=<span class="literal">False</span>, optimize=<span class="number">-1</span>)</span><br><span class="line">                            将source编译为代码或者AST对象。代码对象能够通过<span class="keyword">exec</span>语句来执行或者eval()进行求值。</span><br><span class="line">                            <span class="number">1</span>、参数source：字符串或者AST（Abstract Syntax Trees）对象。</span><br><span class="line">                            <span class="number">2</span>、参数 filename：代码文件名称，如果不是从文件读取代码则传递一些可辨认的值。</span><br><span class="line">                            <span class="number">3</span>、参数model：指定编译代码的种类。可以指定为 ‘<span class="keyword">exec</span>’,’eval’,’single’。</span><br><span class="line">                            <span class="number">4</span>、参数flag和dont_inherit：这两个参数暂不介绍</span><br><span class="line"> dir([object])              如果有实参，它会尝试返回该对象的有效属性列表。</span><br><span class="line">                            <span class="number">1</span>、不带参数时，返回当前范围内的变量、方法和定义的类型列表；</span><br><span class="line">                            <span class="number">2</span>、带参数时，返回参数的属性、方法列表。</span><br><span class="line">                            <span class="number">3</span>、如果参数包含方法__dir__()，该方法将被调用。当参数为实例时。</span><br><span class="line">                            <span class="number">4</span>、如果参数不包含__dir__()，该方法将最大限度地收集参数信息</span><br><span class="line">delattr(object, name)       删除object对象名为name的属性</span><br><span class="line">eval(expression, globals=<span class="literal">None</span>, locals=<span class="literal">None</span>)</span><br><span class="line">                            计算表达式expression的值</span><br><span class="line">exec(object[, globals[, locals]])</span><br><span class="line">                            这个函数支持动态执行 Python 代码。object 必须是字符串或者代码对象。</span><br><span class="line">                            如果是字符串，那么该字符串将被解析为一系列 Python 语句并执行（除非发生语法错误）</span><br><span class="line">filter(function, iterable)  构造一个序列，等价于[ item <span class="keyword">for</span> item <span class="keyword">in</span> iterable <span class="keyword">if</span> function(item)]</span><br><span class="line">                            <span class="number">1</span>、参数function：返回值为<span class="literal">True</span>或<span class="literal">False</span>的函数，可以为<span class="literal">None</span></span><br><span class="line">                            <span class="number">2</span>、参数iterable：序列或可迭代对象</span><br><span class="line">getattr(object, name[, default])</span><br><span class="line">                            获取一个类的属性</span><br><span class="line">globals()                   返回表示当前全局符号表的字典</span><br><span class="line">hasattr(object, name)       判断对象object是否包含名为name的特性</span><br><span class="line">hash(object)                返回该对象的哈希值（如果它有的话）</span><br><span class="line">id(object)                  返回对象的“标识值”</span><br><span class="line">isinstance(object, classinfo)</span><br><span class="line">                            判断object是否是<span class="class"><span class="keyword">class</span>的实例</span></span><br><span class="line"><span class="class"><span class="title">issubclass</span><span class="params">(class, classinfo)</span></span></span><br><span class="line"><span class="class">                            判断是否是子类</span></span><br><span class="line"><span class="class"><span class="title">len</span><span class="params">(s)</span>  	                返回集合长度</span></span><br><span class="line"><span class="class"><span class="title">locals</span><span class="params">()</span>  	                返回当前的变量列表</span></span><br><span class="line"><span class="class"><span class="title">map</span><span class="params">(function, iterable, ...)</span></span></span><br><span class="line"><span class="class">                            遍历每个元素，执行<span class="title">function</span>操作</span></span><br><span class="line"><span class="class"><span class="title">memoryview</span><span class="params">(obj)</span>  	        返回一个内存镜像类型的对象</span></span><br><span class="line"><span class="class"><span class="title">next</span><span class="params">(iterator[, default])</span>  	类似于<span class="title">iterator</span>.<span class="title">next</span><span class="params">()</span></span></span><br><span class="line"><span class="class"><span class="title">property</span><span class="params">([fget[, fset[, fdel[, doc]]]])</span></span></span><br><span class="line">                            属性访问的包装类，设置后可以通过c.x=value等来访问setter和getter</span><br><span class="line">reduce(function, iterable[, initializer])</span><br><span class="line">                            合并操作，从第一个开始是前两个参数，然后是前两个的结果与第三个合并进行处理，以此类推</span><br><span class="line">reload(module)  	        重新加载模块</span><br><span class="line">setattr(object, name, value)</span><br><span class="line">                            设置属性值</span><br><span class="line">repr(object)  	            将一个对象变幻为可打印的格式</span><br><span class="line">slice（） 	　              返回一个表示由range(start, stop, step)所指定索引集的slice对象</span><br><span class="line">staticmethod 	            声明静态方法，是个注解</span><br><span class="line">super(type[, object-<span class="keyword">or</span>-type])</span><br><span class="line">                            引用父类</span><br><span class="line">type(object) 	            返回该object的类型</span><br><span class="line">vars([object])  	        返回对象的变量，若无参数与dict()方法类似</span><br><span class="line">bytearray([source [, encoding [, errors]]])</span><br><span class="line">                            返回一个byte数组</span><br><span class="line">                            <span class="number">1</span>、如果source为整数，则返回一个长度为source的初始化数组；</span><br><span class="line">                            <span class="number">2</span>、如果source为字符串，则按照指定的encoding将字符串转换为字节序列；</span><br><span class="line">                            <span class="number">3</span>、如果source为可迭代类型，则元素必须为[<span class="number">0</span> ,<span class="number">255</span>]中的整数；</span><br><span class="line">                            <span class="number">4</span>、如果source为与buffer接口一致的对象，则此对象也可以被用于初始化bytearray.</span><br><span class="line">zip(*iterables)             创建一个聚合了来自每个</span><br></pre></td></tr></table></figure>
+
+<p><strong>IO操作</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">file(filename [, mode [, bufsize]])</span><br><span class="line">                            file类型的构造函数，作用为打开一个文件，如果文件不存在且mode为写或追加时，</span><br><span class="line">                            文件将被创建。添加‘b’到mode参数中，将对文件以二进制形式操作。添加‘+’到mode</span><br><span class="line">                            参数中，将允许对文件同时进行读写操作</span><br><span class="line">                            <span class="number">1</span>、参数filename：文件名称。</span><br><span class="line">                            <span class="number">2</span>、参数mode：<span class="string">'r'</span>（读）、<span class="string">'w'</span>（写）、<span class="string">'a'</span>（追加）。</span><br><span class="line">                            <span class="number">3</span>、参数bufsize：如果为<span class="number">0</span>表示不进行缓冲，如果为<span class="number">1</span>表示进行行缓冲，如果是一个大于<span class="number">1</span>的数表示缓冲区的大小 。</span><br><span class="line">input([prompt])  	        获取用户输入,推荐使用raw_input，因为该函数将不会捕获用户的错误输入</span><br><span class="line">open(name[, mode[, buffering]])</span><br><span class="line">                            打开文件与file有什么不同？推荐使用open</span><br><span class="line">print(*objects, sep=<span class="string">' '</span>, end=<span class="string">'\n'</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br><span class="line">                            将objects打印到file指定的文本流，以sep分隔并在末尾加上end。</span><br><span class="line">                            sep, end, file 和 flush 如果存在，它们必须以关键字参数的形式给出</span><br><span class="line">raw_input([prompt])  	    设置输入，输入都是作为字符串处理</span><br></pre></td></tr></table></figure>
+
+<p><strong>其他</strong></p>
+<p>help()–帮助信息</p>
+<p><a href="https://docs.python.org/zh-cn/3.7/library/functions.html#hash" target="_blank" rel="noopener">参照python3.7.4中文官方说明</a></p>
+<p><strong><strong>init</strong>.py文件</strong></p>
+<p>这个文件的作用是把文件夹变成一个python模块，通常是空的但是我们还可以为他增加一些其他功能．<br>当我们导入一个包的时候实际上是导入了它的<strong>init</strong>.py文件，这样就可以在里面批量导入我们所需要的模块而不用一个个导入．</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># __init__.py</span></span><br><span class="line">__all__ = [<span class="string">'os'</span>, <span class="string">'sys'</span>, <span class="string">'re'</span>, <span class="string">'urllib'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># a.py</span></span><br><span class="line"><span class="keyword">from</span> package <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
+<p>这时就会把注册在<strong>init</strong>.py文件中<strong>all</strong>列表中的模块和包导入到当前文件中来.</p>
+<p><strong>python 返回函数的理解</strong></p>
+<p>返回函数的理解，返回函数返回的不是函数执行的结果而是内定函数的对象，它的作用就是<br>不会立即执行而是等到调用的时候才执行优点是可以延迟计算</p>
+<p><strong>文件操作</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'name'</span>,<span class="string">'r+'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.seek(<span class="number">0</span>)   <span class="comment"># 当有内容要读取并替换部分内容的时候可以把指针或句柄移到开头truncate()清空</span></span><br><span class="line">    f.truncate()</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2013/12/02/vim%E7%AE%80%E8%AE%B0/" rel="next" title="vim笔记">
+      vim笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python内建函数列表"><span class="nav-number">1.</span> <span class="nav-text">python内建函数列表</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小灰灰</p>
+  <div class="site-description" itemprop="description">我的博客用于记录</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://yoursite.com/" title="http:&#x2F;&#x2F;yoursite.com" rel="noopener" target="_blank">链接1</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://yoursite.com/" title="http:&#x2F;&#x2F;yoursite.com" rel="noopener" target="_blank">链接2</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小灰灰</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
